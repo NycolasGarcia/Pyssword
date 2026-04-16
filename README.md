@@ -4,7 +4,7 @@
 
   Aplicativo leve e poderoso de *Geração, Armazenamento e Gerenciamento* de senhas.
 
-  ![Preview](https://raw.githubusercontent.com/NycolasGarcia/Pyssword/refs/heads/assets/preview-image.png)
+  <img src="https://raw.githubusercontent.com/NycolasGarcia/Pyssword/refs/heads/main/static/assets/preview-image.png" width="600">
 
   [Funcionalidades](#funcionalidades) | [Instalação](#instalação) | [Nosso Workflow](#nosso-workflow)
 
