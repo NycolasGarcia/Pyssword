@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}My Website{% endblock %}</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    </head>
+    <body class="d-flex flex-column vh-100">
+        {% include 'common/header.html' %}
+        <main class="flex-grow-1 overflow-auto p-3 bg-body-secondary">
+            {% block content %}{% endblock %}
+        </main>
+        {% include 'common/footer.html' %}
+
+        <!-- MODALS -->
+        {% include 'common/modals/search.html' %}
+        {% include 'common/modals/password.html' %}
+        {% include 'common/modals/changelog.html' %}
+        {% include 'common/modals/settings.html' %}
+        {% include 'common/modals/profile.html' %}
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>
